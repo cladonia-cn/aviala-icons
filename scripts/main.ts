@@ -89,7 +89,7 @@ await writeFile('./dist/css/aviala-icons.outline.css', outlineCss)
 
 const filledCss = getIconsCSS(
   outlineIconSet.export(),
-  Object.keys(outlineIconSet.entries),
+  Object.keys(filledIconSet.entries),
   {
     iconSelector: `.{prefix}-{name}`,
     varName: 'aviala-svg-icon',
