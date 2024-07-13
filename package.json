@@ -1,11 +1,12 @@
 {
   "name": "@aviala/icons",
   "version": "0.0.1",
-  "description": "",
+  "description": "Icon Library for Aviala Design UI Library",
   "scripts": {
     "build": "jiti ./scripts/main.ts"
   },
-  "keywords": [],
+  "repository": "https://github.com/cladonia-cn/aviala-icons",
+  "keywords": ["SVG", "CSS", "Icon", "iconify", "icon", "iconify-json", "iconfont", "font", "design", "ui"],
   "author": "Cladonia",
   "license": "MIT",
   "publishConfig": {
