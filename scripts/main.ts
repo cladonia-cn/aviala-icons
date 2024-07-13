@@ -97,10 +97,10 @@ const filledCss = getIconsCSS(
 )
 await writeFile('./dist/css/aviala-icons.filled.css', filledCss)
 
-await writeFile(
-  './dist/css/aviala-icons.filled.css',
-  `${filledCss}\n\n${outlineCss}\n`
-)
+const allCss = `${filledCss}\n\n${outlineCss}\n`
+await writeFile('./dist/css/aviala-icons.css', allCss)
+
+await writeFile('./dist/aviala-icons.css', allCss)
 
 type Deferred<T> = Promise<T> & {
   resolve(value: T): void
