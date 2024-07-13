@@ -88,7 +88,7 @@ const outlineCss = getIconsCSS(
 await writeFile('./dist/css/aviala-icons.outline.css', outlineCss)
 
 const filledCss = getIconsCSS(
-  outlineIconSet.export(),
+  filledIconSet.export(),
   Object.keys(filledIconSet.entries),
   {
     iconSelector: `.{prefix}-{name}`,
@@ -185,18 +185,18 @@ const exportIconfont = async (
   ])
 }
 
-await exportIconfont(
-  await exportSvg(filledIconSet, 'filled'),
-  'Aviala Icons Filled',
-  'AvialaIconsFilled',
-  'filled'
-)
+// await exportIconfont(
+//   await exportSvg(filledIconSet, 'filled'),
+//   'Aviala Icons Filled',
+//   'AvialaIconsFilled',
+//   'filled'
+// )
 
-await exportIconfont(
-  await exportSvg(outlineIconSet, 'outline'),
-  'Aviala Icons Outline',
-  'AvialaIconsOutline',
-  'outline'
-)
+// await exportIconfont(
+//   await exportSvg(outlineIconSet, 'outline'),
+//   'Aviala Icons Outline',
+//   'AvialaIconsOutline',
+//   'outline'
+// )
 
 export {}
