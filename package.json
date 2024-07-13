@@ -1,6 +1,6 @@
 {
   "name": "@aviala/icons",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Icon Library for Aviala Design UI Library",
   "scripts": {
     "build": "jiti ./scripts/main.ts"
