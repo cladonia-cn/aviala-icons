@@ -63,7 +63,7 @@ const outlineIconSet = await importDirectory(
 )
 
 await processIconSet(outlineIconSet)
-await writeJSONFile('./dist/icon.outline.json', outlineIconSet.export())
+await writeJSONFile('./dist/iconify.outline.json', outlineIconSet.export())
 
 const filledIconSet = await importDirectory(path.resolve('.', 'icons/filled'), {
   includeSubDirs: true,
@@ -72,7 +72,7 @@ const filledIconSet = await importDirectory(path.resolve('.', 'icons/filled'), {
 })
 
 await processIconSet(filledIconSet)
-await writeJSONFile('./dist/icon.filled.json', filledIconSet.export())
+await writeJSONFile('./dist/iconify.filled.json', filledIconSet.export())
 
 await mkdir('./dist/css')
 
