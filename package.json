@@ -1,8 +1,9 @@
 {
   "name": "@aviala/icons",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "",
   "scripts": {
+    "build": "jiti ./scripts/main.ts"
   },
   "keywords": [],
   "author": "Cladonia",
@@ -11,5 +12,32 @@
     "registry": "https://registry.npmjs.com",
     "access": "public"
   },
-  "files": []
+  "exports": {
+    "./*": "./dist/*"
+  },
+  "files": [
+    "./dist"
+  ],
+  "devDependencies": {
+    "@iconify/tools": "^4.0.4",
+    "@iconify/types": "^2.0.0",
+    "@iconify/utils": "^2.1.25",
+    "@types/node": "^20.14.10",
+    "@types/svg2ttf": "^5.0.3",
+    "@types/svgicons2svgfont": "^10.0.5",
+    "@types/ttf2eot": "^2.0.2",
+    "@types/ttf2woff": "^2.0.4",
+    "@types/ttf2woff2": "^2.0.2",
+    "change-case": "^5.4.4",
+    "jiti": "2.0.0-beta.3",
+    "prettier": "^3.3.3",
+    "rimraf": "^6.0.1",
+    "svg2ttf": "^6.0.3",
+    "svgicons2svgfont": "^12.0.0",
+    "ttf2eot": "^3.1.0",
+    "ttf2woff": "^3.0.0",
+    "ttf2woff2": "^5.0.0",
+    "typescript": "^5.5.3"
+  },
+  "dependencies": {}
 }
